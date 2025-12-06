@@ -94580,6 +94580,17 @@
                         },
                         "email": {
                             "type": "string"
+                        },
+                        "user_fields": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "anyOf": [
+                                    {},
+                                    {
+                                        "not": {}
+                                    }
+                                ]
+                            }
                         }
                     },
                     "required": ["id", "firstName", "lastName", "email"],
